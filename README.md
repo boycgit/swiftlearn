@@ -21,6 +21,8 @@
 
 有些语法比较重要，为了帮助记忆，我简单快速做了一些笔记：
  - [理解闭包](./basic/closure.html)
+ - [全局函数](./basic/inner-fn.html)：包含了如何查找全局函数的tips
+ - [错误处理](./basic/error-handle.html)：文章包含了ErrorType protocol、 guard、defer 等知识点
 
 ### 番外篇
  - [13个小技巧帮你征服Xcode](http://benbeng.leanote.com/post/13%E4%B8%AA%E5%B0%8F%E6%8A%80%E5%B7%A7%E5%B8%AE%E4%BD%A0%E5%BE%81%E6%9C%8DXcode)：能帮助你提高生产力的Xcode设置；

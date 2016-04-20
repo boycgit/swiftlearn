@@ -14,9 +14,6 @@
 
 ## 目录
 
- - 1. [hello world](./hello-world/README.md)：踏出第一步，包含了基本的环境搭建；
- - 
-
 ### 基础知识篇
 
 有些语法比较重要，为了帮助记忆，我简单快速做了一些笔记：
@@ -24,6 +21,13 @@
  - [全局函数](./basic/inner-fn.md)：包含了如何查找全局函数的tips
  - [错误处理](./basic/error-handle.md)：文章包含了ErrorType protocol、 guard、defer 等知识点
  - [Cocoa框架](./basic/cocoa.md)：初学者可能对Cocoa框架、Foundation框架不太清楚，收集了一些资料帮助理解
+ - [自适应布局](./basic/adaptive.md)：详细介绍自适应布局，包含outlets、actions创建的方法
+
+### 实战部分
+
+ - 1. [hello world](./hello-world/README.md)：踏出第一步，包含了基本的环境搭建；
+ - 
+
 
 ### 番外篇
  - [13个小技巧帮你征服Xcode](http://benbeng.leanote.com/post/13%E4%B8%AA%E5%B0%8F%E6%8A%80%E5%B7%A7%E5%B8%AE%E4%BD%A0%E5%BE%81%E6%9C%8DXcode)：能帮助你提高生产力的Xcode设置；

@@ -127,11 +127,15 @@ func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexP
 
 有同学肯定会问，我用一个组件的时候，去哪里获取应该设置的属性呢？
 
-比如Table View，我怎么知道必须要实现那两个方法？怎么知道内容如何写呢？
+比如TableView组件中，我怎么知道必须要实现那两个方法？怎么知道内容如何写呢？
 
 还有，我怎么就知道 **indexPath** 里面有个 `row` 属性呢？
 
 总之，我该去哪儿查？
+
+个人觉得还是官网比较靠谱，以 UITableView 组件为例，我们到 [iOS搜索平台](https://developer.apple.com/search/) 输入关键字 **UITableView** 就能查到很多资料，往往第一条就是API文档，点进去就有比较详细的说明：
+
+![search](http://ww3.sinaimg.cn/large/514b710agw1f33g486axij20o10kx0w2.jpg)
 
 
 

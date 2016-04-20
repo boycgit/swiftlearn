@@ -16,6 +16,13 @@
 
 我们可以将 **Cocoa框架** 理解成工具箱，如果不用这个工具箱的话，很多东西都要自己制造，一是稳定性不够，二是也没有必要；（你要当厨师的话，菜完全可以去买，不必自个儿去种！）
 
+![foundation](http://ww4.sinaimg.cn/large/514b710agw1f32wmbffxjj20eq09gaar.jpg)
+图中每一层框架是建立在底下那一层的基础上，因此你若使用低一层组件可能要多写一些代码，不过灵活性要高一些；
+ - Cocoa Touch：包含events、touches、gestures、 multithreading、map support, and accelerometer等
+ - 
+
+每个Xcode工程都会默认引入3个关键库： `CoreGraphics` , `Foundation` , and `UIKit`
+
 ## Swift中的兼容性
 
 为了方便使用，Swift 的基本类型都可以 **无缝转换** 到 Foundation 框架中的对应类型。脱离 Cocoa 框架进行 app 开发是不可能的事情。因此我们在使用 Swift 开发 app 时无法避免地需要在 Swift 类型和 Foundation 类型间进行转换。如果需要每次显式地书写转换的话，大概就没人会喜欢用 Swift 了。还好 Swift 与 Foundation 之间的类型转换是可以自动完成的，这使得通过 Swift 使用 Cocoa 时顺畅了很多。
@@ -58,3 +65,23 @@ fileName_.dynamicType   //__NSCFString.Type
 
 
 有一个需要注意的问题是 Array 和 Dictionary 在行为上和它们对应的 NS 模式的对应版本有些许不同。因为 Swift 的容器类型是 **可以装任意其他类型的**，包括各种 **enum** 和 **struct** ，而 **NSArray 和 NSDictionary 只能放 NSObject 的子类对象**。所以在 Array 和 Dictionary 中如果装有非 AnyObject 或者不能转为 AnyObject 的内容的话，做强制的转换将会抛出编译错误 (这要感谢 Swift 的强类型特性，我们可以 **在编译的时候就抓到这样的错误**)。
+
+### CocoaPods
+
+ - [怎样在Swift中使用CocoaPods](http://www.cocoachina.com/swift/20150630/12305.html)：从基础讲起如何使用库管理工具，不过需要有ios开发基础
+
+CocoaPods是Cocoa项目的依赖管理工具。它有上千个能帮你优雅地扩充自己项目的库。
+
+它相当于Node项目的npm工具、Mac上的brewhome ~~
+
+与其自己造轮胎，还不如让用专业造轮胎的成品；
+
+CocoaPods被建立在Ruby上，而最近的Mac OS X版本带有Ruby。这自从OS X 10.7之后就实现了。两句话搞定安装：
+
+```shell
+sudo gem install cocoapods
+pod setup --verbose
+```
+> 第二条命令它将 [CocoaPods Master Specs repository](https://github.com/CocoaPods/Specs) 克隆到了你电脑上的 **~/.cocoapods/** 目录下。`verbose` 选项记录下了进程运行时的进展，能让你看到进程而不是一个僵在那里的屏幕
+
+

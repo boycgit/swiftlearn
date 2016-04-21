@@ -8,12 +8,12 @@
 
 > 示例文件在当前目录下的 `adaptive` 文件夹里
 
-## 详细步骤
+## 1、详细步骤
 
 友情提示：
 
  - 打开对象库：View ➪ Utilities ➪ Show Object Library
- - 显示辅助视图：View ➪ Assistant Editor Show Assistant Editor
+ - 显辅助视图：View ➪ Assistant Editor Show Assistant Editor
  - 显示源代码视图：View ➪ Source Editor ➪ Show Standard Editor.
 
 创建文件一个测试文件，就叫  `Adaptive` 工程好了:
@@ -28,7 +28,7 @@
 
 下面我们较为详细讲解如何给元素添加 **尺寸约束**
 
-### 居中约束
+### 1.1、居中约束
 
 在 **对象库** 中选中 label 组件并添加到 storyboard 中，**用鼠标调整至水平居中** 位置。
 
@@ -65,7 +65,7 @@ Y就是当前对象约束之后的值，X则是参考对象的值；
 
 如果运行中提示 **Frame for “Label” will be different at run time.** 问题，可以通过 **Editor ➪ Resolve Auto Layout Issues ➪ Update Frames** 来更新解决之；
 
-### pin适应
+### 1.2、pin适应
 
 接下来我们想在文本右边添加一个按钮，而且这个按钮位置√也能自动适应，这时候 **pin** 布局就派上用场了；
 
@@ -82,7 +82,7 @@ Y就是当前对象约束之后的值，X则是参考对象的值；
 
 最后为了让效果展现在storyboard上，需要点击一下 **Resolve Auto Layout Issues** 按钮刷新布局；
 
-### 预览
+### 1.3、预览
 
 为了不运行程序的情况下，我们可以在不同设备中检查布局是否自适应了；
 
@@ -94,5 +94,55 @@ Y就是当前对象约束之后的值，X则是参考对象的值；
 
 ![multi](http://ww3.sinaimg.cn/large/514b710agw1f33lvi8hy4j20ct0jft9h.jpg)
 
+## 2、Outlets
 
-> 注：[UIButton](http://developer.apple.com/library/IOs/#documentation/UIKit/Reference/UIButton_Class/UIButton/UIButton.html) 按钮最常用的事件应该就是 `Touch Up Inside`，
+### 两种方式
+
+首先，打开辅助编辑器。
+
+创建outlets的方式有两种。一种是在组件上 **右键**，然后用鼠标按住弹出菜单项右边的圈圈，插入到要放置代码的地方：
+
+![右键插入](http://ww2.sinaimg.cn/large/514b710agw1f3434q5fulj20jf0cowgg.jpg)
+
+还有一种是快捷键方式 **Ctrl+Cmd+鼠标拖拽** ，因为这种方式比较快捷，推荐使用这种方式创建：
+
+![快捷键插入](http://ww4.sinaimg.cn/large/514b710agw1f3436a9fkvj20le08xdhd.jpg)
+
+在弹出的框里写入变量名称为 **UILabel**，然后点击 **connect** 按钮：
+
+![写入变量名称](http://ww3.sinaimg.cn/large/514b710agw1f343amx0wpj20ih04rdgs.jpg)
+
+这样在代码区就能自动获得代码：
+
+```swift
+@IBOutlet weak var textLabel: UILabel!
+```
+
+在代码界面上点击那个小圆点，就会在左边storybord上显示相关信息：
+
+![显示相关信息](http://ww1.sinaimg.cn/large/514b710agw1f343qxfhrvj20jr09oaba.jpg)
+
+### 创建actions
+
+为了能够点击按钮之后 Label 组件内部的文本自动更改成 **Hello world**，需要给按钮 添加事件响应；
+
+这里需要两个步骤，第一步创建按钮的outlets，过程上述创建label的过程一模一样，变量名为 **UIButton**；
+
+第二步则是给这个按钮添加 actions ，创建方式和上面添加 outlets 的方式相一致，也是有右键和快捷键这两种方式；
+
+在弹出的对话框里设置连接属性 为 **action**，定义的事件回调函数名称是 **onButtonPressed**，[UIButton](http://developer.apple.com/library/IOs/#documentation/UIKit/Reference/UIButton_Class/UIButton/UIButton.html) 按钮最常用的事件应该就是 **Touch Up Inside**：
+
+![添加事件](http://ww2.sinaimg.cn/large/514b710agw1f343ukobrej20ip04vq4a.jpg)
+
+这样就添加完成事件了，然后在里面写入代码逻辑，最后具体的代码是：
+```swift
+
+    @IBOutlet weak var someButton: UIButton!
+    @IBAction func onButtonPressed(sender: AnyObject) {
+        textLabel.text = "Hello World"
+    }
+```
+
+最后点击运行程序，用户在点击按钮之后就会将 label 文本修改成 Hello World 了；完成~
+
+

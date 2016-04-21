@@ -94,9 +94,9 @@ Y就是当前对象约束之后的值，X则是参考对象的值；
 
 ![multi](http://ww3.sinaimg.cn/large/514b710agw1f33lvi8hy4j20ct0jft9h.jpg)
 
-## 2、Outlets
+## 2、Outlets & Actions
 
-### 两种方式
+### 2.1、两种方式创建
 
 首先，打开辅助编辑器。
 
@@ -122,7 +122,7 @@ Y就是当前对象约束之后的值，X则是参考对象的值；
 
 ![显示相关信息](http://ww1.sinaimg.cn/large/514b710agw1f343qxfhrvj20jr09oaba.jpg)
 
-### 创建actions
+### 2.2、创建actions
 
 为了能够点击按钮之后 Label 组件内部的文本自动更改成 **Hello world**，需要给按钮 添加事件响应；
 

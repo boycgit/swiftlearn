@@ -30,7 +30,9 @@
 
 ### 1.1、居中约束
 
-在 **对象库** 中选中 label 组件并添加到 storyboard 中，**用鼠标调整至水平居中** 位置。
+在 **对象库** 中选中 label 组件并添加到 storyboard 中，**用鼠标调整至水平居中** 位置：
+
+![选中label组件](http://ww1.sinaimg.cn/large/514b710agw1f34cqu56gnj20qd0jh0uy.jpg)
 
 再在 storyboard 编辑器右下角选择 **alignment constraint editor（对齐约束编辑器）**，这里我们想让标签 **一直水平垂直居中** ，所以添加 **2个约束**
 

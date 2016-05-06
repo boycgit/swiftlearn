@@ -22,6 +22,7 @@
  - [错误处理](./basic/error-handle.md)：文章包含了ErrorType protocol、 guard、defer 等知识点
  - [Cocoa框架](./basic/cocoa.md)：初学者可能对Cocoa框架、Foundation框架不太清楚，收集了一些资料帮助理解
  - [自适应布局](./basic/adaptive.md)：详细介绍自适应布局，包含outlets、actions创建的方法
+ - [理解storyboard](./basic/storyboard.md)：入门级介绍什么是storyboard，它由哪些部分组成等；
 
 ### 实战部分
 
@@ -31,6 +32,7 @@
 
 ### 番外篇
  - [13个小技巧帮你征服Xcode](http://benbeng.leanote.com/post/13%E4%B8%AA%E5%B0%8F%E6%8A%80%E5%B7%A7%E5%B8%AE%E4%BD%A0%E5%BE%81%E6%9C%8DXcode)：能帮助你提高生产力的Xcode设置；
+ - [icon stamper](https://github.com/tylergaw/icon-stamper)：一键生成iOS多种图标尺寸的插件，附带 [说明](http://www.ui.cn/detail/77876.html)
 
 ## 声明
 
@@ -39,3 +41,7 @@
 感谢互联网，本系列知识内容全部来源于互联网，但我可以保证里面所有的字全部都是自己码出来，图也是挨个截出来的，绝非单纯的 copy&paste；
 
 作为一名初学者，一步一个脚印，与君共勉；
+
+## 里程碑
+
+  - 2016.04.15 创建此文档，初始化大致文件组织结构

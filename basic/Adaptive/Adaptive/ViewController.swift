@@ -10,8 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    
-    
     @IBOutlet weak var textLabel: UILabel!
     @IBOutlet weak var someButton: UIButton!
 
@@ -27,7 +25,5 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be Srecreated.
     }
-
-
 }
 

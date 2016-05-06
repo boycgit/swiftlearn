@@ -1,0 +1,2 @@
+/Users/jscon/Library/Developer/Xcode/DerivedData/Adaptive-coxzqorgflrqjtbxczrjjvytnpxj/Build/Products/Debug-iphonesimulator/Adaptive.app
+

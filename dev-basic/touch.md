@@ -62,6 +62,7 @@ func touchesCancelled(_ touches: Set<UITouch>?, withEvent event: UIEvent?)
 ```
 
 > 自定义的 UIView 类需要覆盖上述方法，而系统自动的诸如 `UITextView`已经实现了（比如点击输入框会弹出键盘），就不必自己动手
+
 > `touchesCancelled` 事件出现的时机比较特殊，当你触摸屏幕时恰好遇到 系统提示低内存啊、用户来电啊 这类情况就会触发；
 
 ## 3、Gesture识别
@@ -88,17 +89,11 @@ Touch事件是比较底层的事件，平时我们在手机上往往是多个手
 
  1. 添加一个 **Single View Application** 应用程序，应用名称 **GestureTest**
  2. 拖拽 UILabel 到页面中，设置约束（见下图），并为其创建 Outlets，变量名是 **gestureType**
- 
 ![set constraint](https://lh3.googleusercontent.com/-NbdpXGggH4E/Vy8nRSwOthI/AAAAAAAACl4/cc_Wqev2SaQDYmK6YYYhds4mu3fkaJW2wCCo/s800/2016-05-08_19-45-22.png) 
-
  3. 在组件库中输入`gesture`关键字就能过滤出所要的手势了，拖拽 **Tap Gesture Recognizer** 到 storyboard
-
 ![gesture](https://lh3.googleusercontent.com/-ohoju9IN2tE/Vy8RB18XrKI/AAAAAAAAClg/YETA6r1YtDoe2qsnip_qeXYGIkEnF3NaQCCo/s800/2016-05-08_18-11-53.png)
-
  4. 右键为这个手势探测器创建一个Action，对应的方法名为 **onTapGestureDetected** ，创建过程如下：
- 
  ![create outlets](https://lh3.googleusercontent.com/-BbGS-mtTeAo/Vy8mGaRXUAI/AAAAAAAACls/UIMSZmLYXzAS0u5JTNeeeecPiyoeRwFjgCCo/s800/2016-05-08_19-19-39.png)
-
  5. 最后在 **onTapGestureDetected** 方法中写上 `gestureType.text = "探测到事件：Tap"`，当用户点击屏幕的时候就更改label里面的文字内容；
 
 最终 **ViewController.swift** 代码：
@@ -140,7 +135,7 @@ Tips：
 ### 3.2、通过程序方式
 
 
-使用 `[addGestureRecognizer](https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIView_Class/#//apple_ref/occ/instm/UIView/addGestureRecognizer:)` 添加，核心代码类似于
+使用 [addGestureRecognizer](https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIView_Class/#//apple_ref/occ/instm/UIView/addGestureRecognizer:) 添加手势探测，核心代码类似于
 
 ```swift
 let tapRecognizer = UITapGestureRecognizer(target:self , action: Selector("handleBackgroundTap:"));

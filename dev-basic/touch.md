@@ -1,3 +1,5 @@
+# Responder 及 Touches事件
+
 参考文章 
  - [Swift 如何实现手势识别](http://www.oschina.net/translate/implement-gesture-recognizers-swift) ：译文，对新手来讲是很不错的入门文章
  - [Hit-Testing in iOS](http://smnh.me/hit-testing-in-ios/)：测试风格的文章，全文高清图片展示手势原理
@@ -143,7 +145,7 @@ tapRecognizer.cancelsTouchesInView = false
 self.view.addGestureRecognizer(tapRecognizer)
 ```
 
-由于Gesture是建立在 touch 事件基础上的，所以两者不能共存，因此 **如果需要手势识别，一定要将 `cancelsTouchesInViews` 设置成false**； 
+由于Gesture是建立在 touch 事件基础上的，因此 **如果需要手势识别，一定要将 `cancelsTouchesInViews` 设置成false**； 
 
 本文章由于是属于基础部分，不会展开这种方式的demo，后续会在 action系列文章中 展示手势相关的代码程序；想进一步尝试的读者推荐参看以下文章：
  - [IOS-Swift开发基础——触控和手势](https://segmentfault.com/a/1190000004743547)：讲解了基础6种手势的用法

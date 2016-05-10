@@ -25,13 +25,12 @@
  - [理解storyboard](./basic/storyboard.md)：入门级介绍什么是storyboard，它由哪些部分组成等；
 
 ### IOS开发基础
- - [Touch事件及手势的处理](./dev-basic/touch.md)：移动端touch是整个交互的基础，所以要最先掌握
- - [用户输入及键盘的隐藏](./dev-basic/keyboard.md)：讲解输入框相关的知识点，同时讲解下如何隐藏键盘；其中涉及 First Response 的用法
+ - [Touch事件及手势的处理](./dev-basic/touch.md)：移动端touch是整个交互的基础，所以要最先掌握；其中涉及 First Response 的用法
+ - [用户输入及键盘的隐藏](./dev-basic/keyboard.md)：讲解输入框相关的知识点，同时讲解下如何隐藏键盘；
 
 ### 实战部分
 
  - 1. [hello world](./hello-world/README.md)：踏出第一步，包含了基本的环境搭建；
- - 
 
 
 ### 番外篇
@@ -46,6 +45,7 @@
 
 作为一名初学者，一步一个脚印，与君共勉；
 
-## 里程碑
+## 相关文档
 
-  - 2016.04.15 创建此文档，初始化大致文件组织结构
+ - [wiki首页]()：比较详细记录自己文档实现的过程
+ - [milestone](https://github.com/boycgit/swiftlearn/milestones)：为学习swift立下目标，以 **里程碑** 式展现出来

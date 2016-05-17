@@ -150,6 +150,10 @@ self.presentViewController(alert, animated: true, completion: nil)
 
 下面是较为详细步骤说明
 
+**Tips**：
+ - 手势识别内容，请移步[Responder 及 Touches事件](./touch.md)
+ - 创建Outlets、设置尺寸约束，请移步[自适应布局](../basic/adaptive.md)
+
 ### 3.1、创建单应用
 
 在iOS项目卡下选择 **Single View Application** 应用程序，项目名为 **ActionSheetSample**，填写资料的时候 **不用勾选** 最底下的3个选项框（Use Core Data啥的）

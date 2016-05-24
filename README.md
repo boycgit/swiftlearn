@@ -50,6 +50,7 @@
  - [Alert窗和Action Sheets](./dev-basic/alert.md)：弹窗是比较常用的交互形式，弹弹弹，弹走鱼尾纹~~
  - [在视图中添加图片](./dev-basic/image.md)：给应用添加图片的基础教程
  - [通过picker设置数据](./dev-basic/picker.md)：pickerview的入门教程
+ - [Table View介绍](./dev-basic/tableview.md)：tableView一直是ios开发的核心组件，好好学习并努力掌握
 
 ### 实战部分
 

@@ -15,6 +15,7 @@
 ### 基础知识篇
 
 有些语法比较重要，为了帮助记忆，我简单快速做了一些笔记：
+ - [相关tips](./basic/tips.md)：收集了与swift相关的学习资料，附带如何查api技巧
  - [看懂闭包](./basic/closure.md)：快速理解闭包的语法
  - [全局函数](./basic/inner-fn.md)：包含了如何查找全局函数的tips
  - [错误处理](./basic/error-handle.md)：文章包含了ErrorType protocol、 guard、defer 等知识点
@@ -22,27 +23,6 @@
  - [自适应布局](./basic/adaptive.md)：详细介绍自适应布局，包含outlets、actions创建的方法
  - [理解storyboard](./basic/storyboard.md)：入门级介绍什么是storyboard，它由哪些部分组成等；
 
-
-有同学肯定会问：
- - “我用一个组件的时候，去哪里获取应该设置的属性呢？”
- - “比如TableView组件中，我怎么知道必须要实现那两个方法？怎么知道内容如何写呢？”
- - “还有，我怎么就知道 **indexPath** 里面有个 `row` 属性呢？”
-
-**总之，我该去哪儿查？**
-
-个人觉得还是官网比较靠谱，以 UITableView 组件为例，我们到 [iOS搜索平台](https://developer.apple.com/search/) 输入关键字 **UITableView** 就能查到很多资料，往往第一条就是API文档，点进去就有比较详细的说明：
-
-![search](http://ww3.sinaimg.cn/large/514b710agw1f33g486axij20o10kx0w2.jpg)
-
-其实这些个文档已经集合到Xcode IDE中了，在 **帮助菜单里**，选择 **API Reference**：
-
-![refer](https://lh3.googleusercontent.com/-h1Y3VgIGdIA/VzrptllkTUI/AAAAAAAACpk/lbz98x5bGccBW0rIrTr7ldrlS2uSEsBUQCCo/s800/2016-05-17_17-50-23.png)
-
-直接搜索关键字进行查阅，方便又快捷：
-
-![find](https://lh3.googleusercontent.com/-_SESXijRYHk/VzrqvCPuoiI/AAAAAAAACps/SPKepoxnIJwQj6DTNmBkNSKDl-k5fw0JACCo/s800/2016-05-17_17-55-48.png)
-
-既然是手册，当然是用来查阅的，平时需要自己了解各个组件的基础知识，有个大概的印象之后，再去查找会事半功倍；
 
 ### IOS开发基础
  - [Touch事件及手势的处理](./dev-basic/touch.md)：移动端touch是整个交互的基础，所以要最先掌握；其中涉及 First Response 的用法

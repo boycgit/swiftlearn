@@ -32,6 +32,7 @@
  - [通过picker设置数据](./dev-basic/picker.md)：pickerview的入门教程
  - [Table View介绍](./dev-basic/tableview.md)：tableView一直是ios开发的核心组件，好好学习并努力掌握
  - [Collection View介绍](./dev-basic/collection.md)：和tableview功能类似，不过可以展现多行多列
+ - [Tab Bar](./dev-basic/tabbar.md)：主要是标签条（UITabBar）标签页控制器（UITabBarController）用法
 
 ### 实战部分
 
@@ -44,6 +45,7 @@
 ### 番外篇
  - [13个小技巧帮你征服Xcode](http://benbeng.leanote.com/post/13%E4%B8%AA%E5%B0%8F%E6%8A%80%E5%B7%A7%E5%B8%AE%E4%BD%A0%E5%BE%81%E6%9C%8DXcode)：能帮助你提高生产力的Xcode设置；
  - [icon stamper](https://github.com/tylergaw/icon-stamper)：一键生成iOS多种图标尺寸的插件，附带 [说明](http://www.ui.cn/detail/77876.html)
+ - [Swift 必备开发库 (高级篇)](http://www.jianshu.com/p/f38f1882dcc7)：加密库、动画库等几个iOS开发会用到的几个库
 
 
 

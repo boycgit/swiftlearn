@@ -22,6 +22,7 @@
  - [Cocoa框架](./basic/cocoa.md)：初学者可能对Cocoa框架、Foundation框架不太清楚，收集了一些资料帮助理解
  - [自适应布局](./basic/adaptive.md)：详细介绍自适应布局，包含outlets、actions创建的方法
  - [理解storyboard](./basic/storyboard.md)：入门级介绍什么是storyboard，它由哪些部分组成等；
+ - [什么是Selector](./basic/selector.md)：ios开发中经常遇到selector，它类似于JS中的回调函数概念，常用于观察者模式
 
 
 ### IOS开发基础
@@ -46,6 +47,7 @@
  - [13个小技巧帮你征服Xcode](http://benbeng.leanote.com/post/13%E4%B8%AA%E5%B0%8F%E6%8A%80%E5%B7%A7%E5%B8%AE%E4%BD%A0%E5%BE%81%E6%9C%8DXcode)：能帮助你提高生产力的Xcode设置；
  - [icon stamper](https://github.com/tylergaw/icon-stamper)：一键生成iOS多种图标尺寸的插件，附带 [说明](http://www.ui.cn/detail/77876.html)
  - [Swift 必备开发库 (高级篇)](http://www.jianshu.com/p/f38f1882dcc7)：加密库、动画库等几个iOS开发会用到的几个库
+ - [给Swift程序添加Markdown式注解](http://www.appcoda.com.tw/swift-markdown/)：良好的文档将会对后续的代码维护极为重要；markdown能给注释非常好的阅读排版，同时文中还涉及 **关键字** 的使用；
 
 
 

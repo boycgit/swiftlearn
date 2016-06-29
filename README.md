@@ -25,7 +25,7 @@
  - [什么是Selector](./basic/selector.md)：ios开发中经常遇到selector，它类似于JS中的回调函数概念，常用于观察者模式
 
 
-### IOS开发基础
+### IOS开发基础（UI篇）
  - [Touch事件及手势的处理](./dev-basic/touch.md)：移动端touch是整个交互的基础，所以要最先掌握；其中涉及 First Response 的用法
  - [用户输入及键盘的隐藏](./dev-basic/keyboard.md)：讲解输入框相关的知识点，同时讲解下如何隐藏键盘；
  - [Alert窗和Action Sheets](./dev-basic/alert.md)：弹窗是比较常用的交互形式，弹弹弹，弹走鱼尾纹~~
@@ -35,6 +35,7 @@
  - [Collection View介绍](./dev-basic/collection.md)：和tableview功能类似，不过可以展现多行多列
  - [Tab Bar](./dev-basic/tabbar.md)：主要是标签条（UITabBar）标签页控制器（UITabBarController）用法
  - [Scroll View](./dev-basic/scrollview.md)：滚动视图组件教程
+ - [Popover层及Modal框](./dev-basic/popover.md)：基础的Popover层及Modal框，初看和Alert窗有点儿类似
 
 ### 实战部分
 

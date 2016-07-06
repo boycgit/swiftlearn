@@ -23,6 +23,7 @@
  - [自适应布局](./basic/adaptive.md)：详细介绍自适应布局，包含outlets、actions创建的方法
  - [理解storyboard](./basic/storyboard.md)：入门级介绍什么是storyboard，它由哪些部分组成等；
  - [什么是Selector](./basic/selector.md)：ios开发中经常遇到selector，它类似于JS中的回调函数概念，常用于观察者模式
+ - [操作plist文件](./basic/plist.md)：介绍ios开发中如何读写property list（属性文件）
 
 
 ### IOS开发基础（UI篇）

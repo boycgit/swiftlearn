@@ -24,6 +24,7 @@
  - [理解storyboard](./basic/storyboard.md)：入门级介绍什么是storyboard，它由哪些部分组成等；
  - [什么是Selector](./basic/selector.md)：ios开发中经常遇到selector，它类似于JS中的回调函数概念，常用于观察者模式
  - [操作plist文件](./basic/plist.md)：介绍ios开发中如何读写property list（属性文件）
+ - [应用设置](./basic/setting.md)：介绍ios开发中读取手机自带的 **设置** 中的应用配置项；
 
 
 ### IOS开发基础（UI篇）
@@ -38,6 +39,9 @@
  - [Scroll View](./dev-basic/scrollview.md)：滚动视图组件教程
  - [Popover层及Modal框](./dev-basic/popover.md)：基础的Popover层及Modal框，初看和Alert窗有点儿类似
 
+### RxSwift系列教程
+ - []
+
 ### 实战部分
 
  - 1. [hello world](./hello-world/README.md)：踏出第一步，包含了基本的环境搭建；
@@ -51,6 +55,7 @@
  - [icon stamper](https://github.com/tylergaw/icon-stamper)：一键生成iOS多种图标尺寸的插件，附带 [说明](http://www.ui.cn/detail/77876.html)
  - [Swift 必备开发库 (高级篇)](http://www.jianshu.com/p/f38f1882dcc7)：加密库、动画库等几个iOS开发会用到的几个库
  - [给Swift程序添加Markdown式注解](http://www.appcoda.com.tw/swift-markdown/)：良好的文档将会对后续的代码维护极为重要；markdown能给注释非常好的阅读排版，同时文中还涉及 **关键字** 的使用；
+ - [CocoaPods详解之----使用篇](http://blog.csdn.net/wzzvictory/article/details/18737437)：对新手友好的教程，包含了踩坑经验，图文并茂；看完这个系列教程，个人觉得没必要自己编写教程了
 
 
 

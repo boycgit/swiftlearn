@@ -151,3 +151,10 @@ Y就是当前对象约束之后的值，X则是参考对象的值；
 最后点击运行程序，用户在点击按钮之后就会将 label 文本修改成 Hello World 了；完成~
 
 
+### 2.3 一些问题
+
+如果在创建 outlets 的时候提示 **Could not insert new outlet connection**，可以先点删除键，然后选“Remove Reference”（不要真正删除文件）,接着选 **File -> Add Files to ...** 菜单，在文件选择界面选择刚才的文件将他们重新加入项目中。
+
+> 可参考 http://www.bkjia.com/IOSjc/1115345.html
+
+

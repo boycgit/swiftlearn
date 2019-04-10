@@ -127,6 +127,23 @@ Y就是当前对象约束之后的值，X则是参考对象的值；
 
 ![显示相关信息](http://ww1.sinaimg.cn/large/514b710agw1f343qxfhrvj20jr09oaba.jpg)
 
+还有另外一种方式，我们现在 ViewControll.swift 文件中声明变量：
+
+```js
+@IBOutlet weak var slider: UISlider!
+```
+
+注意这里末尾有个 `!` 强制拆包
+
+然后到 Main.storyboard 中，通过 **Ctrl+点击** 就会出现 Outlets 选项菜单
+
+![Outlets 选项菜单](https://ws4.sinaimg.cn/large/006tNc79gy1fhxn4oazjaj30l00hz76h.jpg)
+
+我们按住 **New Refererencing Outlet** 右边的小圆圈，将其拖拽到左边 **文档大纲（Document Outline）** 上的 **View Controller** ，在弹出的菜单中选择 `slider` 变量即可：
+
+![选择变量](https://ws1.sinaimg.cn/large/006tNc79gy1fhxn7qn5agj307k02e0sp.jpg)
+
+
 ### 2.2、创建actions
 
 为了能够点击按钮之后 Label 组件内部的文本自动更改成 **Hello world**，需要给按钮 添加事件响应；

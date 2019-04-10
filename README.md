@@ -42,6 +42,7 @@
  - [Popover层及Modal框](./dev-basic/popover.md)：基础的Popover层及Modal框，初看和Alert窗有点儿类似
 
 ### IOS 开发基础 - 单元测试
+ - [单元测试简介](./test/intro.md)
 
 ### IOS开发基础（数据库）
  - [realm基本知识](./db/realm.md)：Realm 提供了很好的可扩展性，只用很少的几行代码就可完成操作
